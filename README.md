@@ -31,13 +31,13 @@ Works on all modern browsers (Chrome, Firefox, Safari, Edge). For the best exper
 ## 🌐 Live Demo
 
 🚀 **Try it here:**  
-**https://YOUR-LIVE-LINK.netlify.app/**
+**https://swift-rabbit-typing.netlify.app/**
 
 ---
 
 ## 📸 Project Screenshot
 
-![Typing Speed Test](./assets/project-screenshot.png)
+![Typing Speed Test](./image.png)
 
 > Replace the image above with your project's screenshot and keep it inside the `assets` folder (or update the path accordingly).
 
@@ -61,7 +61,7 @@ This project is licensed under the **MIT License**.
 
 If you like this project, don't forget to ⭐ the repository!
 
-GitHub: **https://swift-rabbit-typing.netlify.app/**
+GitHub: **https://github.com/ROCKY0012-bits/rabbit-typing**
 
 ---
 
