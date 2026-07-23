@@ -1,0 +1,85 @@
+{
+  "ui": {
+    "app_name": "Rabbit",
+    "tagline": "· type",
+    "ready_title": "Ready to hop?",
+    "ready_desc": "Choose your mode",
+    "start_hint": "Press Space or Enter to start",
+    "mode_label": "Mode",
+    "mode_time": "Time",
+    "mode_words": "Words",
+    "mode_quote": "Quote",
+    "mode_zen": "Zen",
+    "duration_label": "Duration",
+    "difficulty_label": "Difficulty",
+    "easy": "Easy",
+    "hard": "Hard",
+    "sound": "Sound",
+    "muted": "Muted",
+    "restart": "Restart test",
+    "restart_shortcut": "(⌘R)",
+    "wpm": "wpm",
+    "accuracy": "% acc",
+    "raw": "raw",
+    "stats_separator": "/",
+    "footer": "Built with 🐇 by Rabbit · Free & open source",
+    "results_title": "🏁 Test Complete!",
+    "results_sub": "Here's how you did",
+    "results_wpm": "WPM",
+    "results_accuracy": "Accuracy",
+    "results_raw": "Raw WPM",
+    "results_chars": "Characters",
+    "results_correct": "Correct",
+    "results_incorrect": "Incorrect",
+    "result_retry": "↻ Try Again",
+    "result_close": "Close"
+  },
+  "words": {
+    "easy": [
+      "the", "be", "to", "of", "and", "a", "in", "that", "have", "i",
+      "it", "for", "not", "on", "with", "he", "as", "you", "do", "at",
+      "this", "but", "his", "by", "from", "they", "we", "say", "her", "she",
+      "or", "an", "will", "my", "one", "all", "would", "there", "their", "what",
+      "so", "up", "out", "if", "about", "who", "get", "which", "go", "me",
+      "when", "make", "can", "like", "time", "no", "just", "him", "know", "take",
+      "people", "into", "year", "your", "good", "some", "could", "them", "see", "other",
+      "than", "then", "now", "look", "only", "come", "its", "over", "think", "also",
+      "back", "after", "use", "two", "how", "our", "work", "first", "well", "way",
+      "even", "new", "want", "because", "any", "these", "give", "day", "most", "us"
+    ],
+    "hard": [
+      "analysis", "necessary", "particularly", "development", "government",
+      "organization", "experience", "individual", "relationship", "management",
+      "responsibility", "communication", "opportunity", "performance", "understanding",
+      "significant", "environment", "technology", "community", "contribute",
+      "establish", "recognize", "consider", "maintain", "influence",
+      "approach", "capacity", "challenge", "creative", "diverse",
+      "effective", "financial", "generate", "identify", "implement",
+      "initiative", "knowledge", "leadership", "objective", "potential",
+      "practical", "priority", "quality", "resource", "strategy",
+      "sustainable", "transform", "ultimate", "valuable", "widespread"
+    ]
+  },
+  "quotes": {
+    "short": [
+      "The only way to do great work is to love what you do.",
+      "In the middle of difficulty lies opportunity.",
+      "Life is what happens when you're busy making other plans.",
+      "Get busy living or get busy dying.",
+      "You only live once, but if you do it right, once is enough."
+    ],
+    "medium": [
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "The future belongs to those who believe in the beauty of their dreams.",
+      "It does not matter how slowly you go as long as you do not stop.",
+      "The only impossible journey is the one you never begin.",
+      "Your time is limited, so don't waste it living someone else's life.",
+      "The best way to predict the future is to create it."
+    ],
+    "long": [
+      "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.",
+      "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood.",
+      "The greatest glory in living lies not in never falling, but in rising every time we fall. We are what we repeatedly do. Excellence, then, is not an act, but a habit."
+    ]
+  }
+}

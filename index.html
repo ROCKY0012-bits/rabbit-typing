@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐇 Rabbit — Typing Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <!-- HEADER -->
+      <header class="header">
+        <a class="logo" href="#">
+          <span class="logo-icon">🐇</span>
+          rabbit <span>· type</span>
+        </a>
+        <div class="header-actions">
+          <button class="header-btn" id="soundToggle" title="Toggle sound">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M11 5L6 9H2v6h4l5 4V5z" />
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+            </svg>
+            <span>Sound</span>
+          </button>
+          <button class="header-btn" id="restartHeader" title="Restart (⌘+R)">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 12a9 9 0 1 0 9-9m0 0v6m0-6h-6" />
+            </svg>
+            <span>Restart</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- MODE BAR -->
+      <div class="mode-bar" id="modeBar">
+        <div class="mode-group">
+          <span class="mode-group-label">Mode</span>
+          <button class="mode-btn accent active" data-mode="time">Time</button>
+          <button class="mode-btn" data-mode="words">Words</button>
+          <button class="mode-btn" data-mode="quote">Quote</button>
+          <button class="mode-btn" data-mode="zen">Zen</button>
+        </div>
+        <div class="mode-divider"></div>
+        <div class="mode-group" id="timeOptions">
+          <span class="mode-group-label">Duration</span>
+          <button class="mode-btn active" data-duration="15">15s</button>
+          <button class="mode-btn" data-duration="30">30s</button>
+          <button class="mode-btn" data-duration="60">60s</button>
+          <button class="mode-btn" data-duration="120">120s</button>
+        </div>
+        <div class="mode-group" id="wordOptions" style="display: none">
+          <span class="mode-group-label">Words</span>
+          <button class="mode-btn active" data-wordCount="10">10</button>
+          <button class="mode-btn" data-wordCount="25">25</button>
+          <button class="mode-btn" data-wordCount="50">50</button>
+          <button class="mode-btn" data-wordCount="100">100</button>
+        </div>
+        <div class="mode-group" id="quoteOptions" style="display: none">
+          <span class="mode-group-label">Length</span>
+          <button class="mode-btn active" data-quoteLength="short">
+            Short
+          </button>
+          <button class="mode-btn" data-quoteLength="medium">Medium</button>
+          <button class="mode-btn" data-quoteLength="long">Long</button>
+        </div>
+        <div class="mode-divider"></div>
+        <div class="mode-group">
+          <span class="mode-group-label">Difficulty</span>
+          <button class="mode-btn active" data-difficulty="easy">Easy</button>
+          <button class="mode-btn" data-difficulty="hard">Hard</button>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="stats">
+        <div class="stats-left">
+          <div class="stat-item">
+            <span class="stat-value" id="timerDisplay">30</span>
+            <span class="stat-label">s</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value accent" id="wpmDisplay">0</span>
+            <span class="stat-label">wpm</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value green" id="accDisplay">100</span>
+            <span class="stat-label">% acc</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="rawDisplay">0</span>
+            <span class="stat-label">raw</span>
+          </div>
+        </div>
+        <div class="stats-right">
+          <span id="charCount">0</span> / <span id="totalChars">0</span>
+        </div>
+      </div>
+
+      <!-- TIMER BAR -->
+      <div class="timer-bar">
+        <div class="timer-fill" id="timerFill"></div>
+      </div>
+
+      <!-- TEXT DISPLAY WITH START OVERLAY -->
+      <div class="text-display" id="textDisplay" tabindex="0">
+        <div class="start-overlay" id="startOverlay">
+          <div class="start-content">
+            <div class="start-hint">
+              Press <kbd>Space</kbd> or <kbd>Enter</kbd> to start
+            </div>
+          </div>
+        </div>
+        <input
+          class="hidden-input"
+          id="hiddenInput"
+          type="text"
+          autofocus
+          aria-hidden="true"
+        />
+      </div>
+
+      <!-- RESTART -->
+      <button class="restart-btn" id="restartBtn">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3 12a9 9 0 1 0 9-9m0 0v6m0-6h-6" />
+        </svg>
+        Restart test
+        <span
+          style="color: var(--text-muted); font-size: 0.5rem; font-weight: 400"
+          >(⌘R)</span
+        >
+      </button>
+
+      <!-- KEYBOARD -->
+      <div class="keyboard-wrap">
+        <div class="keyboard" id="keyboard"></div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        Built with 🐇 by <a href="#">Rabbit</a> · Free &amp; open source
+      </div>
+    </div>
+
+    <!-- RESULTS OVERLAY -->
+    <div class="results-overlay" id="resultsOverlay">
+      <div class="results-card">
+        <h2 id="resultTitle">🏁 Test Complete!</h2>
+        <p class="sub" id="resultSub">Here's how you did</p>
+        <div class="results-grid">
+          <div class="result-stat">
+            <div class="value accent" id="rWpm">0</div>
+            <div class="label">WPM</div>
+          </div>
+          <div class="result-stat">
+            <div class="value green" id="rAcc">0%</div>
+            <div class="label">Accuracy</div>
+          </div>
+          <div class="result-stat">
+            <div class="value" id="rRaw">0</div>
+            <div class="label">Raw WPM</div>
+          </div>
+          <div class="result-stat">
+            <div class="value" id="rChars">0</div>
+            <div class="label">Characters</div>
+          </div>
+          <div class="result-stat">
+            <div class="value" id="rCorrect">0</div>
+            <div class="label">Correct</div>
+          </div>
+          <div class="result-stat">
+            <div class="value" id="rIncorrect">0</div>
+            <div class="label">Incorrect</div>
+          </div>
+        </div>
+        <div class="results-actions">
+          <button class="primary" id="resultRetry">↻ Try Again</button>
+          <button id="resultClose">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
