@@ -1,4 +1,3 @@
-
 ---
 
 ## 🎮 How to Play
@@ -16,8 +15,8 @@
 
 ## 🔊 Sound
 
-- Correct keystroke → high‑pitched click.
-- Incorrect keystroke → low‑pitched thud.
+- Correct keystroke → high-pitched click.
+- Incorrect keystroke → low-pitched thud.
 - Test finished → ascending chime.
 - Click the **Sound** button in the header to toggle audio on/off.
 
@@ -25,27 +24,45 @@
 
 ## 📱 Browser Support
 
-Works on all modern browsers (Chrome, Firefox, Safari, Edge). For best experience, use a desktop or tablet with a physical keyboard.
+Works on all modern browsers (Chrome, Firefox, Safari, Edge). For the best experience, use a desktop or laptop with a physical keyboard.
+
+---
+
+## 🌐 Live Demo
+
+🚀 **Try it here:**  
+**https://YOUR-LIVE-LINK.netlify.app/**
+
+---
+
+## 📸 Project Screenshot
+
+![Typing Speed Test](./assets/project-screenshot.png)
+
+> Replace the image above with your project's screenshot and keep it inside the `assets` folder (or update the path accordingly).
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests and suggestions are welcome! Feel free to open an issue for bugs or feature requests.
+Pull requests and suggestions are welcome! Feel free to open an issue for bug reports, feature requests, or improvements.
 
 ---
 
 ## 📄 License
 
-MIT – free to use, modify, and distribute.
+This project is licensed under the **MIT License**.
 
 ---
 
-## 🙏 Credits
+## ❤️ Credits
 
-Built with 🐇 by [Rabbit](https://example.com).  
-Inspired by Monkeytype and other typing tests.
+### Made with ❤️ by **Rocky Kumar**
+
+If you like this project, don't forget to ⭐ the repository!
+
+GitHub: **https://swift-rabbit-typing.netlify.app/**
 
 ---
 
-**Happy typing! 🚀**
+**Happy Typing! 🚀⌨️**
